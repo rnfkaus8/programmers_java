@@ -6,6 +6,7 @@ package taehyun.kim;
 import org.junit.Test;
 
 import taehyun.kim.solution.Lotto;
+import taehyun.kim.solution.replaceStrToNum;
 
 import static org.junit.Assert.*;
 
@@ -25,5 +26,13 @@ public class AppTest {
         int[] answer = lotto.solution(lottos, win_nums);
 
         Assert.assertArrayEquals(result, answer);
+    }
+
+    @Test
+    public void replaceStrToNumTest(){
+        replaceStrToNum test = new replaceStrToNum();
+        String s = "2three45sixseven";
+        int result = 234567;
+        Assert.assertEquals(result, test.solution(s));
     }
 }
